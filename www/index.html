@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>CONTROLADOR DE LUZ PARA ACUARIO</title>
+</head>
+<body>
+	<div class="app">
+		<div style="font-size: 15pt; font-weight: bold; padding-top: 10px; text-transform: none">CONTROL DE LUZ PARA ACUARIOS v1.0</div>
+		<div style="font-size: 10pt; font-weight: bold; text-transform: none">por MOTION</div>
+		<br>
+		<button id="connectBT">Conectar con Controlador</button><br><br>
+		<div style="float: left; font-weight: bold; padding-left: 10px;">Estado de conexi&oacute;n:&nbsp;&nbsp;&nbsp;</div><div id="status" style="width:15px; height:15px; background-color:yellow; float: left; border-radius: 5px"></div>
+		<br>
+		<div style="display: inline-block; width: 80%">
+			<div style="width:15px; height:15px; background-color:yellow; float: left; border-radius: 5px"></div><div style="text-align: justify; text-transform: none">&nbsp;Esperando conectar</div>
+			<div style="height: 5px"></div>
+			<div style="width:15px; height:15px; background-color:green; float: left; border-radius: 5px"></div><div style="text-align: justify; text-transform: none">&nbsp;Conectado</div>
+			<div style="height: 5px"></div>
+			<div style="width:15px; height:15px; background-color:red; float: left; border-radius: 5px"></div><div style="text-align: justify; text-transform: none">&nbsp;Error al conectar</div>
+		</div>
+		<br>
+		<input id="msg" type="text" value="DIA;16;00;23;59">
+		<br><br>
+		<button id="sendBT" onclick="sendBT();">ENVIAR Y CONFIGURAR</button>`
+		<br><br>
+		<div style="font-weight: bold; text-align: left; padding-left: 10px">INSTRUCCIONES</div>
+		<br>
+		<div style="text-align: justify; text-transform: none; padding-left: 10px; padding-right: 10px;">Para configurar la luz de d&iacute;a debe llenar los datos de la siguiente manera:</div>
+		<br>
+		<div style="text-align: justify; text-transform: none; padding-left: 10px; padding-right: 10px;"><strong>Ejm.:</strong> Encender a las 16:00 y apagar a las 24:00</div>
+		<p><strong>DIA</strong>;16;00;23;59</p>
+		<div style="text-align: justify; text-transform: none; padding-left: 10px; padding-right: 10px;">Para configurar la luz de luna debe llenar los datos de la siguiente manera:</div>
+		<br>
+		<div style="text-align: justify; text-transform: none; padding-left: 10px; padding-right: 10px;"><strong>Ejm.:</strong> La fase lunar dura 4 d&iacute;as aproximadamente, entonces debemos escoger la hora de encendido y la hora de pagado y adem&aacute;s la fecha que deseamos que empiece. Supongamos que se encienta cada 24 de mes:</div>
+		<p><strong>LUNA</strong>;00;01;03;00;24</p>
+		<div style="text-align: justify; text-transform: none; padding-left: 10px; padding-right: 10px;">Para configurar la fecha y hora del equipo debe llenar los datos de la siguiente manera:</div>
+		<p><strong>HORA</strong>;A&Ntilde;O;MES;DIA;HORA;MINUTO</p>
+	</div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>

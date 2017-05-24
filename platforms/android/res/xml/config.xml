@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget android-versionCode="1.0.0" id="com.motion.aquarium" version="1.0.0" versionCode="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <feature name="Whitelist">
+        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="BluetoothSerial">
+        <param name="android-package" value="com.megster.cordova.BluetoothSerial" />
+    </feature>
+    <name>Controlador de Luz para Acuarios</name>
+    <description>Controlador de pantallas de luz para Acuarios por Arduino.</description>
+    <author email="info@motion.com.bo" href="http://www.motion.com.bo">MOTION TM LTDA.</author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <allow-intent href="market:*" />
+    <icon density="ldpi" src="www/res/icon/android/icon-036-ldpi.png" />
+    <icon density="mdpi" src="www/res/icon/android/icon-048-mdpi.png" />
+    <icon density="hdpi" src="www/res/icon/android/icon-072-hdpi.png" />
+    <icon density="xhdpi" src="www/res/icon/android/icon-096-xhdpi.png" />
+    <icon density="xxhdpi" src="www/res/icon/android/icon-144-xxhdpi.png" />
+    <icon density="xxxhdpi" src="www/res/icon/android/icon-192-xxxhdpi.png" />
+    <splash density="land-ldpi" src="www/res/screen/android/screen-ldpi-landscape.png" />
+    <splash density="land-mdpi" src="www/res/screen/android/screen-mdpi-landscape.png" />
+    <splash density="land-hdpi" src="www/res/screen/android/screen-hdpi-landscape.png" />
+    <splash density="land-xhdpi" src="www/res/screen/android/screen-xhdpi-landscape.png" />
+    <splash density="land-xxhdpi" src="www/res/screen/android/screen-xxhdpi-landscape.png" />
+    <splash density="land-xxxhdpi" src="www/res/screen/android/screen-xxxhdpi-landscape.png" />
+    <splash density="port-ldpi" src="www/res/screen/android/screen-ldpi-portrait.png" />
+    <splash density="port-mdpi" src="www/res/screen/android/screen-mdpi-portrait.png" />
+    <splash density="port-hdpi" src="www/res/screen/android/screen-hdpi-portrait.png" />
+    <splash density="port-xhdpi" src="www/res/screen/android/screen-xdpi-portrait.png" />
+    <splash density="port-xxhdpi" src="www/res/screen/android/screen-xxdpi-portrait.png" />
+    <splash density="port-xxxhdpi" src="www/res/screen/android/screen-xxxdpi-portrait.png" />
+    <preference name="loglevel" value="DEBUG" />
+    <preference name="SplashScreenDelay" value="120000" />
+    <preference name="AutoHideSplashScreen" value="false" />
+    <preference name="FadeSplashScreenDuration" value="750" />
+    <preference name="ShowSplashScreenSpinner" value="false" />
+</widget>
